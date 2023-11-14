@@ -1,4 +1,5 @@
 # Project 1: Process Scheduler
+<img width="1126" alt="Screenshot 2023-09-06 at 12 02 10 AM" src="https://github.com/edwinsoto88/CSCE4600/assets/61428070/17fbce8d-1ea2-4220-962a-fd65c3b7cd2a">
 
 ## Description 
 For this project we'll be building a simple process scheduler that takes in a file containing example processes, and outputs a schedule based on the three different schedule types:
