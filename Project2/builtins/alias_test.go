@@ -44,9 +44,9 @@ func TestAliasCommand(t *testing.T) {
 			}
 
 			// Check alias value after setting
-			if tt.wantErr == nil && tt.args[0] != "" {
+			if tt.wantErr == nil && len(tt.args) > 1 && tt.args[0] != "" {
 				val, exists := builtins.AliasMap[tt.args[0]]
-				if exists && val != tt.args[1] {
+				if exists && len(tt.args) > 1 && val != tt.args[1] {
 					t.Errorf("Alias value mismatch, got %s, want %s", val, tt.args[1])
 				}
 			}
